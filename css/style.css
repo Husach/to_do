@@ -413,6 +413,8 @@ template {
       background: #f1c752; }
     .card__mark--green {
       background: #8edc87; }
+    .card__mark--blue {
+      background: #7db6fd; }
   .card__text {
     font-size: 16px;
     color: #424a59;
@@ -464,7 +466,7 @@ template {
       width: 24px;
       height: 24px;
       fill: #df5c5c;
-      margin-right: 10px; }
+      margin: 0 10px 0 20px; }
 
 .gallery__img:first-child {
   margin-right: 25px; }
@@ -522,6 +524,8 @@ template {
     color: #fefefe;
     margin: 0; }
   .header-toogle__img {
+    width: 24px;
+    height: 24px;
     fill: #fefefe; }
 
 .header-content {
@@ -537,6 +541,8 @@ template {
   border-bottom: 1px solid #d9dce3; }
 
 .header__bell {
+  width: 24px;
+  height: 24px;
   fill: #5e6a80;
   /* &:after {
     content: '';
@@ -601,6 +607,9 @@ template {
   height: 45px;
   padding-left: 15px; }
   .form__search:hover {
+    border: 1px solid #a0c7fd;
+    box-shadow: 0 1px 3px rgba(116, 179, 250, 0.3); }
+  .form__search--header:hover {
     border: 1px solid #74a6fa; }
 
 .form__search--header {

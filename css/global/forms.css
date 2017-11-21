@@ -6,6 +6,9 @@
   height: 45px;
   padding-left: 15px; }
   .form__search:hover {
+    border: 1px solid #a0c7fd;
+    box-shadow: 0 1px 3px rgba(116, 179, 250, 0.3); }
+  .form__search--header:hover {
     border: 1px solid #74a6fa; }
 
 .form__search--header {

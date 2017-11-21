@@ -20,6 +20,8 @@
       background: #f1c752; }
     .card__mark--green {
       background: #8edc87; }
+    .card__mark--blue {
+      background: #7db6fd; }
   .card__text {
     font-size: 16px;
     color: #424a59;
@@ -71,7 +73,7 @@
       width: 24px;
       height: 24px;
       fill: #df5c5c;
-      margin-right: 10px; }
+      margin: 0 10px 0 20px; }
 
 .gallery__img:first-child {
   margin-right: 25px; }

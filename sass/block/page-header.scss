@@ -29,6 +29,8 @@
   }
 
   &__img {
+    width: 24px;
+    height: 24px;
   	fill: #fefefe;
   }
 }
@@ -47,6 +49,8 @@
 }
 
 .header__bell {
+  width: 24px;
+  height: 24px;
   fill: #5e6a80;
   /* &:after {
     content: '';

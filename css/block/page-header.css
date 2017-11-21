@@ -24,6 +24,8 @@
     color: #fefefe;
     margin: 0; }
   .header-toogle__img {
+    width: 24px;
+    height: 24px;
     fill: #fefefe; }
 
 .header-content {
@@ -39,6 +41,8 @@
   border-bottom: 1px solid #d9dce3; }
 
 .header__bell {
+  width: 24px;
+  height: 24px;
   fill: #5e6a80;
   /* &:after {
     content: '';

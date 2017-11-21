@@ -30,6 +30,10 @@
     &--green {
       background: #8edc87;
     }
+
+    &--blue {
+      background: #7db6fd;
+    }
   }
 
   &__text {  	
@@ -101,7 +105,7 @@
   		width: 24px;
   		height: 24px;
   		fill: #df5c5c;
-  		margin-right: 10px;
+  		margin: 0 10px 0 20px;
   	}
   }
 }
