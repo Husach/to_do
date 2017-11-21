@@ -1,8 +1,9 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 body {
-	font-family: 'OpenSansBold', Arial, sans-serif;
-	font-size: 18px;
-	line-height: 30px;
-	margin: 0 auto;
-	padding: 0;
-	color: #000;
+  width: 100%;
 }

@@ -1,0 +1,18 @@
+.form--header {
+  padding-right: 30px;
+}
+
+.form__search {
+  width: 262px;
+  height: 45px;
+  padding-left: 15px;
+
+  &:hover {
+  	border: 1px solid #74a6fa;
+  }	
+}
+
+.form__search--header {
+  width: 318px;
+  height: 40px;
+}

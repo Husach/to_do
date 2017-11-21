@@ -1,0 +1,38 @@
+.main-nav {
+	width: 255px;
+	height: calc(100vh - 67px);
+	background: #2d323e;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 
+              0 0 4px rgba(0, 0, 0, 0.12);
+}
+
+.menu {
+	margin: 0;
+	padding: 0;
+
+  &__item {
+  	display: flex;
+  	align-items: center;
+    list-style: none;
+
+    &:hover {
+  	  background: #292d38;
+    }
+  }
+
+  &__img {
+    width: 24px;
+    height: 24px;
+  	fill: #aeb0b4;
+  	margin: 0 28px 0 24px;
+  }
+
+  &__link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 48px;
+    text-decoration: none;
+    color: #bdbec2;
+  }
+}
+

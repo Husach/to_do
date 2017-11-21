@@ -1,0 +1,47 @@
+.page-main {
+  display: flex;
+  background: #f2f5f9;
+}
+
+.main-content {
+	display: flex;
+  width: calc(100% - 255px);
+  overflow-x: scroll;
+}
+
+.column {
+  width: 262px;
+  margin: 30px 0 0 30px;
+
+  &-header {
+   	display: flex;
+   	justify-content: space-between;
+   	align-items: center;
+   	height: 50px;
+   	background: #208abe;
+   	padding: 0 20px;
+   	margin-bottom: 10px;
+
+    &__title {
+    	flex-grow: 1;
+    	font-family: 'Rubik', sans-serif;
+    	font-size: 12px;
+    	color: #fff;
+    	text-transform: uppercase;
+    }
+
+    &__link {
+      height: 24px;
+    }
+
+    &__img {
+      width: 24px;
+      height: 24px;
+      fill: #fff;
+    }  
+  }
+
+
+
+
+}
