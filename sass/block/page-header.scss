@@ -9,7 +9,8 @@
 }
 
 .header {
-  &-toogle {
+
+  &-toggle {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -25,20 +26,15 @@
     	color: #fefefe;
       margin: 0;
 
-      &--open {
-        display: none;
+      &--do {
+        margin-left: 20px;
       }
-    }
-    &__img {
-      width: 24px;
-      height: 24px;
-    	fill: #fefefe;
     }
 
     &__img {
-      &--backburger {
-        display: none;
-      }
+      width: 24px;
+      height: 24px;
+      fill: #fefefe;
     }
   }
 
@@ -89,12 +85,14 @@
   }
 
   .header {
-    &-toogle {
+    &-toggle {
+      justify-content: center;
       width: 76px;
       background: #373c47;
       border-bottom: 1px solid #292d38;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 
               0 0 4px rgba(0, 0, 0, 0.12);
+      padding: 0;
 
       &__text {
         font-size: 0;
@@ -125,21 +123,12 @@
 
 @media screen and (min-width: 1440px) {
   .header {
-    &-toogle {
+    &-toggle {
       width: 255px;
 
       &__text {
         font-size: 16px;
       }
-
-      &__img {
-        &--burger {
-          display: none;
-        }
-        &--backburger {
-          display: block;
-        }
-      } 
     }  
   }  
 }
