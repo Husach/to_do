@@ -1,21 +1,27 @@
 .main-nav {
 	background: #2d323e;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 
-              0 0 4px rgba(0, 0, 0, 0.12);
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .menu {
   display: flex;
 	margin: 0;
-	padding: 0;
-
+	padding: 0 0 0 60px;
+  overflow-x: hidden;
+  
   &__item {
   	display: flex;
   	align-items: center;
     list-style: none;
+    border-bottom: 2px solid #2d323e;
+    margin-right: 10px;
+    min-width: 75px;
 
     &:hover {
-  	  background: #292d38;
+      border-bottom: 2px solid #df5b5b;
     }
   }
 
@@ -23,6 +29,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 48px;
+    text-transform: uppercase;
     text-decoration: none;
     color: #bdbec2;
   }
@@ -34,13 +41,29 @@
 }
 
 @media screen and (min-width: 1024px){
+  .main-nav {
+    width: 76px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 
+                  0 0 4px rgba(0, 0, 0, 0.12);
+  }
+
   .menu {
     flex-direction: column;
+    padding: 0;
 
     &__link {
       display: flex;
       align-items: center;
       font-size: 0;
+    }
+
+    &__item {
+      border-bottom: 0;
+
+      &:hover {
+        background: #292d38;
+        border-bottom: 0;
+      }
     }
 
     &__img {
@@ -57,6 +80,7 @@
 
     &__link {
       font-size: 14px;
+      text-transform: none;
     }
   }
 
