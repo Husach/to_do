@@ -14,10 +14,10 @@
   <header class="page-header">
   	<div class="header-toggle">
   		<p class="card__text  header-toggle__text  header-toggle__text--to">To Do</p>
-  		<svg viewBox="0 0 24 24" class="header-toggle__img  header-toggle__img--backburger">
+  		<svg viewBox="0 0 24 24" class="header-toggle__img  header-toggle__img--hidden" id="menu-closed">
     		<path d="M5,13L9,17L7.6,18.42L1.18,12L7.6,5.58L9,7L5,11H21V13H5M21,6V8H11V6H21M21,16V18H11V16H21Z" />
 			</svg>
-			<svg viewBox="0 0 24 24" class="header-toggle__img  header-toggle__img--burger">
+			<svg viewBox="0 0 24 24" class="header-toggle__img" id="menu-open">
 				<path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
 			</svg>
 			<p class="card__text  header-toggle__text  header-toggle__text--do">Do list</p>
@@ -46,7 +46,7 @@
   </header>
 
   <main class="page-main">
-  	<nav class="main-nav">
+  	<nav class="main-nav  main-nav--hidden" id="main-nav">
   		<ul class="menu">
   			<li class="menu__item">
   				
@@ -659,7 +659,8 @@
   		</section>
 
   	</div>
-
+	
+	<script type="text/javascript" src="js/main.js"></script>
   </main>
 
 </body>

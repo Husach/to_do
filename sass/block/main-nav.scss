@@ -45,6 +45,10 @@
     width: 76px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 
                   0 0 4px rgba(0, 0, 0, 0.12);
+
+    &--hidden {
+      display: block;
+    }
   }
 
   .menu {
