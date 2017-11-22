@@ -392,7 +392,6 @@ template {
   display: none; }
 
 .card {
-  position: relative;
   background: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   margin-top: 10px;
@@ -404,7 +403,7 @@ template {
     height: 4px;
     border-radius: 2px;
     background: grey;
-    margin: 0 10px 16px 0; }
+    margin: 0 10px 7px 0; }
     .card__mark:first-child {
       margin-left: 16px; }
     .card__mark--red {
@@ -418,32 +417,38 @@ template {
   .card__text {
     font-size: 16px;
     color: #424a59;
-    margin: 0 0 16px 16px; }
+    margin: 0 0 11px 16px; }
     .card__text-small {
+      position: relative;
       font-size: 12px;
       color: #667081; }
       .card__text-small--progress {
-        position: absolute;
-        bottom: 70px;
-        right: 28px; }
+        margin: 5px 0 5px 15px; }
+    .card__text--check {
+      font-size: 14px;
+      margin-left: 5px; }
   .card__gallery {
-    margin: 0 0 16px 16px; }
+    margin: 0 0 5px 16px; }
   .card__progress {
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    background-size: auto;
-    border: none;
-    width: 184px;
-    height: 4px;
-    margin: 0 0 16px 16px;
-    position: relative; }
-    .card__progress::-webkit-progress-bar {
-      background: #e7e9ee;
-      border-radius: 2px; }
-    .card__progress::-webkit-progress-value {
-      background: #8ddc86;
-      border-radius: 2px; }
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; }
+    .card__progress-value {
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      background-size: auto;
+      border: none;
+      width: 184px;
+      height: 4px;
+      margin: 0 0 0 16px;
+      position: relative; }
+      .card__progress-value::-webkit-progress-bar {
+        background: #e7e9ee;
+        border-radius: 2px; }
+      .card__progress-value::-webkit-progress-value {
+        background: #8ddc86;
+        border-radius: 2px; }
   .card-footer {
     display: -webkit-flex;
     display: -moz-flex;
@@ -452,7 +457,7 @@ template {
     display: flex;
     align-items: center;
     border-top: 1px solid #e3e6ed;
-    padding: 15px 0 15px 5px; }
+    padding: 10px 0 10px 5px; }
     .card-footer__comment {
       width: 24px;
       height: 24px;
@@ -467,6 +472,8 @@ template {
       height: 24px;
       fill: #df5c5c;
       margin: 0 10px 0 20px; }
+  .card__checkbox {
+    margin: 5px 0 10px 16px; }
 
 .gallery__img:first-child {
   margin-right: 25px; }
@@ -527,7 +534,6 @@ template {
     width: 24px;
     height: 24px;
     fill: #fefefe; }
-
 .header-content {
   display: -webkit-flex;
   display: -moz-flex;
@@ -539,7 +545,6 @@ template {
   width: calc(100% - 255px);
   padding-right: 70px;
   border-bottom: 1px solid #d9dce3; }
-
 .header__bell {
   width: 24px;
   height: 24px;

@@ -1,5 +1,4 @@
 .card {
-	position: relative;
   background: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   margin-top: 10px;
@@ -12,25 +11,21 @@
     height: 4px;
     border-radius: 2px;
     background: grey;
-    margin: 0 10px 16px 0;	
+    margin: 0 10px 7px 0;	
     
       &:first-child {
-      	margin-left: 16px;
-			
+      	margin-left: 16px;			
       }
 
     &--red {
       background: #df5b5b;
     }    
-
     &--yellow {
       background: #f1c752;
     }
-
     &--green {
       background: #8edc87;
     }
-
     &--blue {
       background: #7db6fd;
     }
@@ -39,26 +34,34 @@
   &__text {  	
   	font-size: 16px;
   	color: #424a59;
-  	margin: 0 0 16px 16px;
+  	margin: 0 0 11px 16px;
 
   	&-small {
-
+  		position: relative;
   		font-size: 12px;
 			color: #667081;
 
 			&--progress {
-				position: absolute;
-				bottom: 70px;
-				right: 28px;
+				margin: 5px 0 5px 15px;
 			}
+  	}
+
+  	&--check {
+  		font-size: 14px;
+  		margin-left: 5px;
   	}
   }
 
   &__gallery {
-  	margin: 0 0 16px 16px;
+  	margin: 0 0 5px 16px;
   }
 
   &__progress {
+  	display: flex;
+  	align-items: center;
+  	margin-bottom: 10px;
+
+  	&-value {
   	appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -66,18 +69,19 @@
     border: none;
     width: 184px;
     height: 4px;
-    margin: 0 0 16px 16px;
+    margin: 0 0 0 16px;
     position: relative;
 
-    &::-webkit-progress-bar {
-      background: #e7e9ee;
-      border-radius: 2px;
-    }
+      &::-webkit-progress-bar {
+        background: #e7e9ee;
+        border-radius: 2px;
+      }
 
-    &::-webkit-progress-value {
-      background: #8ddc86;
-      border-radius: 2px;
-    }	
+      &::-webkit-progress-value {
+        background: #8ddc86;
+        border-radius: 2px;
+      }	
+    }
   }
 
   &-footer {
@@ -88,7 +92,7 @@
   	display: flex;
   	align-items: center;
   	border-top: 1px solid #e3e6ed;
-  	padding: 15px 0 15px 5px;
+  	padding: 10px 0 10px 5px;
 
   	&__comment {
   		width: 24px;
@@ -107,6 +111,10 @@
   		fill: #df5c5c;
   		margin: 0 10px 0 20px;
   	}
+  }
+
+  &__checkbox {
+  	margin: 5px 0 10px 16px;
   }
 }
 

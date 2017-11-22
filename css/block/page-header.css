@@ -27,7 +27,6 @@
     width: 24px;
     height: 24px;
     fill: #fefefe; }
-
 .header-content {
   display: -webkit-flex;
   display: -moz-flex;
@@ -39,7 +38,6 @@
   width: calc(100% - 255px);
   padding-right: 70px;
   border-bottom: 1px solid #d9dce3; }
-
 .header__bell {
   width: 24px;
   height: 24px;
