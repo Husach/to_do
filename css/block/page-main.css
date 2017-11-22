@@ -28,8 +28,7 @@
     height: 24px;
     fill: #424a59; }
     .column-header__img:hover {
-      fill: #8ddc86;
-      height: 30px; }
+      opacity: 0.5; }
 
 @media screen and (min-width: 1024px) {
   .page-main {

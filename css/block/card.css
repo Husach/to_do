@@ -104,6 +104,28 @@
     fill: #fff; }
   .card__form {
     padding-left: 15px; }
+  .card__checkbox {
+    display: none; }
+    .card__checkbox-custom {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      width: 16px;
+      height: 16px;
+      border: 1px solid #d0d4dd;
+      border-radius: 2px;
+      margin: 7px 0; }
+    .card__checkbox:checked + .card__checkbox-custom::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: #8edc87 url("../img/check.png") no-repeat center center;
+      background-size: 16px 16px;
+      border-radius: 2px; }
 
 .gallery__img:first-child {
   margin-right: 25px; }
@@ -111,31 +133,8 @@
 @media screen and (min-width: 1440px) {
   .card__progress-value {
     width: 184px; } }
-.card__checkbox {
-  display: none; }
-
-.card__checkbox-custom {
-  position: relative;
-  width: 16px;
-  height: 16px;
-  border: 1px solid #d0d4dd;
-  border-radius: 2px; }
-
-.card__checkbox-custom,
 .label {
   display: inline-block;
   vertical-align: middle; }
-
-.card__checkbox:checked + .card__checkbox-custom::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: #8edc87 url("../img/check.png") no-repeat center center;
-  background-size: 16px 16px;
-  border-radius: 2px; }
 
 /*# sourceMappingURL=card.css.map */
