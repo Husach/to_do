@@ -51,18 +51,42 @@
   }  
 
   &__bell {
-  width: 24px;
-  height: 24px;
-  fill: #5e6a80;
-    /* &:after {
-      content: '';
+    position: relative;
+
+    &-img {
+      position: relative;
+      width: 24px;
+      height: 24px;
+      fill: #5e6a80;
+      margin-right: 20px;
+    }
+
+    &:after {
+      content: '2';
       position: absolute;
       top: 0;
-      right: 0;
-      height: 14px;
+      right: 18px;
       width: 14px;
+      height: 13px;
       background: #e2715c;
-    } */
+      border-radius: 2px;
+      font-size: 10px;
+      color: #fff;
+      padding: 1px 0 0 4px;
+    }
   }
 }
 
+.user {
+  outline: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+    
+  &__toggle {
+    width: 24px;
+    height: 24px;
+    fill: #5e6a80;
+  }
+}

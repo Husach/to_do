@@ -7,14 +7,15 @@
   height: 45px;
   padding-left: 15px;
 
-  &:hover {
+  &:focus {
   	border: 1px solid #a0c7fd;
-	box-shadow: 0 1px 3px rgba(116, 179, 250, 0.3);
+    box-shadow: 0 1px 3px rgba(116, 179, 250, 0.3);
 
   }	
 
   &--header {
-    &:hover {
+    
+    &:focus {
       border: 1px solid #74a6fa;
     }	
   }

@@ -424,10 +424,29 @@ template {
       color: #667081; }
       .card__text-small--progress {
         margin: 5px 0 5px 15px; }
+      .card__text-small--ok {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: #8ddc86;
+        margin: 5px 0 5px 15px; }
     .card__text--check {
       font-size: 14px;
       margin-left: 5px; }
+    .card__text--color {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -10px;
+      right: 35px;
+      width: 32px;
+      height: 20px;
+      color: #8edc87;
+      border: 1px solid #8edc87;
+      border-radius: 10px; }
   .card__gallery {
+    position: relative;
     margin: 0 0 5px 16px; }
   .card__progress {
     display: flex;
@@ -474,6 +493,10 @@ template {
       margin: 0 10px 0 20px; }
   .card__checkbox {
     margin: 5px 0 10px 16px; }
+  .card__ok {
+    width: 18px;
+    height: 18px;
+    fill: #fff; }
 
 .gallery__img:first-child {
   margin-right: 25px; }
@@ -546,18 +569,34 @@ template {
   padding-right: 70px;
   border-bottom: 1px solid #d9dce3; }
 .header__bell {
-  width: 24px;
-  height: 24px;
-  fill: #5e6a80;
-  /* &:after {
-    content: '';
+  position: relative; }
+  .header__bell-img {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    fill: #5e6a80;
+    margin-right: 20px; }
+  .header__bell:after {
+    content: '2';
     position: absolute;
     top: 0;
-    right: 0;
-    height: 14px;
+    right: 18px;
     width: 14px;
+    height: 13px;
     background: #e2715c;
-  } */ }
+    border-radius: 2px;
+    font-size: 10px;
+    color: #fff;
+    padding: 1px 0 0 4px; }
+
+.user {
+  outline: none; }
+  .user::-webkit-details-marker {
+    display: none; }
+  .user__toggle {
+    width: 24px;
+    height: 24px;
+    fill: #5e6a80; }
 
 .page-main {
   display: flex;
@@ -611,10 +650,10 @@ template {
   width: 262px;
   height: 45px;
   padding-left: 15px; }
-  .form__search:hover {
+  .form__search:focus {
     border: 1px solid #a0c7fd;
     box-shadow: 0 1px 3px rgba(116, 179, 250, 0.3); }
-  .form__search--header:hover {
+  .form__search--header:focus {
     border: 1px solid #74a6fa; }
 
 .form__search--header {

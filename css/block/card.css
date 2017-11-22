@@ -31,10 +31,29 @@
       color: #667081; }
       .card__text-small--progress {
         margin: 5px 0 5px 15px; }
+      .card__text-small--ok {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: #8ddc86;
+        margin: 5px 0 5px 15px; }
     .card__text--check {
       font-size: 14px;
       margin-left: 5px; }
+    .card__text--color {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -10px;
+      right: 35px;
+      width: 32px;
+      height: 20px;
+      color: #8edc87;
+      border: 1px solid #8edc87;
+      border-radius: 10px; }
   .card__gallery {
+    position: relative;
     margin: 0 0 5px 16px; }
   .card__progress {
     display: flex;
@@ -81,6 +100,10 @@
       margin: 0 10px 0 20px; }
   .card__checkbox {
     margin: 5px 0 10px 16px; }
+  .card__ok {
+    width: 18px;
+    height: 18px;
+    fill: #fff; }
 
 .gallery__img:first-child {
   margin-right: 25px; }
