@@ -49,8 +49,7 @@
       align-items: center;
       font-size: 0; }
       .menu__link--open {
-        font-size: 14px;
-        background: red; }
+        font-size: 14px; }
     .menu__item {
       border-bottom: 0; }
       .menu__item:hover {

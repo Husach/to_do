@@ -5,6 +5,8 @@ window.onload = function () {
 	var menu = document.getElementById("main-nav");
 	var headerToggle = document.getElementById("header-toggle");
 	var menuLink = document.getElementsByClassName("menu-link");
+	var search = document.getElementById("form__search");
+	var headerMagnify = document.getElementById("header__magnify")
 
 	open.addEventListener("click", 
 	  function () {
@@ -13,7 +15,6 @@ window.onload = function () {
 		  headerToggle.classList.add("header-toggle--big");
 		  closed.classList.remove("header-toggle__img--hidden");
 		  menuLink.classList.add("menu__link--open");
-		  
 		}, false);
 
 	closed.addEventListener("click", 
@@ -24,5 +25,11 @@ window.onload = function () {
 		  headerToggle.classList.remove("header-toggle--big");
 		  menuLink.classList.remove("menu__link--open");
 		}, false);
-	
+		
+	search.onmouseover = function() {
+		headerMagnify.classList.toggle("header__magnify--hidden");
+	}
+	search.onmouseout = function() {
+		headerMagnify.classList.toggle("header__magnify--hidden");
+	}
 }

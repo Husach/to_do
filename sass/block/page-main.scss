@@ -35,6 +35,11 @@
       width: 24px;
       height: 24px;
       fill: #424a59;
+
+      &:hover {
+        fill: #8ddc86;
+        height: 30px;
+      }
     }  
   }
 }

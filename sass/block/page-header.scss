@@ -59,6 +59,7 @@
 
   &__bell {
     position: relative;
+    margin-left: 20px;
 
     &-img {
       position: relative;
@@ -82,6 +83,12 @@
       padding: 1px 0 0 4px;
     }
   }
+
+  &__magnify {
+    width: 24px;
+    height: 24px;
+    fill: #5e6a80;
+  }
 }
 
 .user {
@@ -94,6 +101,7 @@
   }
 
   .header {
+
     &-toggle {
       justify-content: center;
       width: 76px;
@@ -114,8 +122,27 @@
     }
 
     &-content {
+      position: relative;
       padding-right: 70px;
       border-bottom: 1px solid #d9dce3;
+    }
+
+    &__magnify {
+      position: absolute;
+      top: 22px;
+      left: 280px;
+      width: 24px;
+      height: 24px;
+
+      &--hidden {
+        width: 0;
+        height: 0;
+      }
+
+      &:hover {
+        width: 24px;
+        height: 24px;
+      }
     }
   }
 
