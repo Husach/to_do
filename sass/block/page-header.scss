@@ -26,6 +26,10 @@
     	color: #fefefe;
       margin: 0;
 
+      &--to {
+        font-size: 0;
+      }
+
       &--do {
         margin-left: 20px;
       }
@@ -35,6 +39,11 @@
       width: 24px;
       height: 24px;
       fill: #fefefe;
+
+      &--backburger {
+        width: 0;
+        height: 0;
+      }
     }
   }
 
@@ -93,6 +102,7 @@
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 
               0 0 4px rgba(0, 0, 0, 0.12);
       padding: 0;
+      padding-left: 15px;
 
       &__text {
         font-size: 0;
@@ -125,9 +135,29 @@
   .header {
     &-toggle {
       width: 255px;
+      justify-content: space-between;
+      padding: 0 20px;
 
       &__text {
         font-size: 16px;
+
+        &--do {
+          display: none;
+        }
+        &--to {
+          padding-left: 0;
+        }
+      }
+
+      &__img {
+        &--backburger {
+          height: 24px;
+          width: 24px;
+        }
+
+        &--burger {
+          display: none;
+        }
       }
     }  
   }  
