@@ -85,15 +85,15 @@
   	margin-bottom: 10px;
 
   	&-value {
-  	appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    background-size: auto;
-    border: none;
-    width: 184px;
-    height: 4px;
-    margin: 0 0 0 16px;
-    position: relative;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      background-size: auto;
+      border: none;
+      width: calc(100% - 80px);
+      height: 4px;
+      margin: 0 0 0 16px;
+      position: relative;
 
       &::-webkit-progress-bar {
         background: #e7e9ee;
@@ -152,4 +152,14 @@
 	&:first-child {
 		margin-right: 25px;
 	}
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    &__progress {
+      &-value {
+        width: 184px;
+      }
+    }
+  }
 }

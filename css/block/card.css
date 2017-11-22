@@ -65,7 +65,7 @@
       -webkit-appearance: none;
       background-size: auto;
       border: none;
-      width: 184px;
+      width: calc(100% - 80px);
       height: 4px;
       margin: 0 0 0 16px;
       position: relative; }
@@ -107,5 +107,9 @@
 
 .gallery__img:first-child {
   margin-right: 25px; }
+
+@media screen and (min-width: 1440px) {
+  .card__progress-value {
+    width: 184px; } }
 
 /*# sourceMappingURL=card.css.map */

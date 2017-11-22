@@ -1,12 +1,11 @@
 .main-nav {
-	width: 255px;
-	height: calc(100vh - 67px);
 	background: #2d323e;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 
               0 0 4px rgba(0, 0, 0, 0.12);
 }
 
 .menu {
+  display: flex;
 	margin: 0;
 	padding: 0;
 
@@ -20,13 +19,6 @@
     }
   }
 
-  &__img {
-    width: 24px;
-    height: 24px;
-  	fill: #aeb0b4;
-  	margin: 0 28px 0 24px;
-  }
-
   &__link {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -36,3 +28,23 @@
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .main-nav {
+    width: 255px;
+    height: calc(100vh - 67px);
+    background: #2d323e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 
+              0 0 4px rgba(0, 0, 0, 0.12);
+    }
+
+  .menu {
+    flex-direction: column;
+
+    &__img {
+      width: 24px;
+      height: 24px;
+      fill: #aeb0b4;
+      margin: 0 28px 0 24px;
+    }
+  }
+}
