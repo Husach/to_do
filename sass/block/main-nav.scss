@@ -40,14 +40,20 @@
   }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
   .main-nav {
-    width: 76px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 255px;
+    height: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 
                   0 0 4px rgba(0, 0, 0, 0.12);
+    z-index: 10;
 
-    &--hidden {
-      display: block;
+    &--hidden {      
+      width: 76px;  
     }
   }
 
@@ -59,6 +65,11 @@
       display: flex;
       align-items: center;
       font-size: 0;
+
+      &--open {
+        font-size: 14px; 
+        background: red;       
+      }
     }
 
     &__item {
@@ -89,6 +100,7 @@
   }
 
   .main-nav {
+    position: relative;
     width: 255px;
     height: calc(100vh - 67px);
     background: #2d323e;

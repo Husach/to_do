@@ -78,6 +78,8 @@
     padding-left: 15px; }
     .header-toggle__text {
       font-size: 0; }
+    .header-toggle--big {
+      width: 255px; }
   .header-content {
     padding-right: 70px;
     border-bottom: 1px solid #d9dce3; }
