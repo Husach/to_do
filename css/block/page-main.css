@@ -28,14 +28,16 @@
     height: 24px;
     fill: #424a59; }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .page-main {
     flex-direction: row; }
 
   .main-content {
     flex-direction: row;
-    width: calc(100% - 255px);
-    overflow-x: scroll; }
+    width: calc(100% - 76px);
+    height: calc(100vh - 67px);
+    overflow-x: scroll;
+    overflow-y: hidden; }
 
   .column {
     width: 262px;
@@ -50,5 +52,8 @@
         color: #fff; }
       .column-header__img {
         fill: #fff; } }
+@media screen and (min-width: 1440px) {
+  .main-content {
+    width: calc(100% - 255px); } }
 
 /*# sourceMappingURL=page-main.css.map */

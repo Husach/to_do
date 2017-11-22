@@ -26,19 +26,22 @@
     text-decoration: none;
     color: #bdbec2;
   }
+
+  &__img {
+    width: 0;
+    height: 0;
+  }
 }
 
-@media screen and (min-width: 1440px) {
-  .main-nav {
-    width: 255px;
-    height: calc(100vh - 67px);
-    background: #2d323e;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 
-              0 0 4px rgba(0, 0, 0, 0.12);
-    }
-
+@media screen and (min-width: 1024px){
   .menu {
     flex-direction: column;
+
+    &__link {
+      display: flex;
+      align-items: center;
+      font-size: 0;
+    }
 
     &__img {
       width: 24px;
@@ -47,4 +50,21 @@
       margin: 0 28px 0 24px;
     }
   }
+}
+
+@media screen and (min-width: 1440px) {
+  .menu {
+
+    &__link {
+      font-size: 14px;
+    }
+  }
+
+  .main-nav {
+    width: 255px;
+    height: calc(100vh - 67px);
+    background: #2d323e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 
+              0 0 4px rgba(0, 0, 0, 0.12);
+    }
 }
