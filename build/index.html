@@ -12,7 +12,7 @@
 <body>
   <header class="page-header">
   	<div class="header-toggle" id="header-toggle">
-  		<p class="card__text  header-toggle__text  header-toggle__text--to">To Do</p>
+  		<p class="card__text  header-toggle__text  header-toggle__text--to" id="text-to">To Do</p>
   		<svg viewBox="0 0 24 24" class="header-toggle__img  header-toggle__img--hidden" id="menu-closed">
     		<path d="M5,13L9,17L7.6,18.42L1.18,12L7.6,5.58L9,7L5,11H21V13H5M21,6V8H11V6H21M21,16V18H11V16H21Z" />
 			</svg>
@@ -21,10 +21,10 @@
 			</svg>
 			<p class="card__text  header-toggle__text  header-toggle__text--do">Do list</p>
   	</div>
-
+										
   	<div class="header-content">
   		<form class="form form--header">
-  			<input type="text" name="header__search" class="form__search  form__search--header" id="form__search">
+  			<input type="text" name="header__search" class="form__search  form__search--header" id="main-search">
   		</form>
 			
 			<a href="#">
@@ -33,11 +33,11 @@
 				</svg>
   		</a>
   		
-  		<div class="header__bell">
+  		<a href="#" class="header__bell">
   		  <svg viewBox="0 0 24 24" class="header__bell-img">
   		  	<path d="M14,20A2,2 0 0,1 12,22A2,2 0 0,1 10,20H14M12,2A1,1 0 0,1 13,3V4.08C15.84,4.56 18,7.03 18,10V16L21,19H3L6,16V10C6,7.03 8.16,4.56 11,4.08V3A1,1 0 0,1 12,2Z" />
   		  </svg>
-  		</div>
+  		</a>
 
   		<details class="header__user">
   			<summary class="user">
@@ -93,6 +93,7 @@
   	</nav>
 
   	<div class="main-content">
+
   		<section class="column">
   			<div class="column-header">
   				<h2 class="column-header__title">Приоритет 1</h2>
@@ -598,7 +599,7 @@
   			</div>
   		</section>
 
-  		<section class="column">
+  		<!-- <section class="column">
   			<div class="column-header">
   				<h2 class="column-header__title">Приоритет 3</h2>
   				<a href="#" class="column-header__link">
@@ -612,11 +613,11 @@
   					</svg>
   				</a>
   			</div>
-
+  		
   			<form class="form">
   				<input type="text" name="header__search" class="form__search" placeholder="Enter name of new card...">
   			</form>
-
+  		
   			<div class="card">
   				<div class="card__mark  card__mark--yellow"></div>
   				<p class="card__text">Name name</p>
@@ -629,12 +630,12 @@
   					<img src="img/user_anon.png" alt="user" class="gallery__img">
   					<p class="card__text-small  card__text--color">+8</p>
   				</div>
-
+  		
   				<div class="card__progress">
   					<progress value="0" max="100" class="card__progress-value"></progress>
   					<p class="card__text-small  card__text-small--progress">0/3</p>
   				</div>
-
+  		
   				<div class="card-footer">
   					<svg viewBox="0 0 24 24" class="card-footer__comment">
   						<path d="M22,4C22,2.89 21.1,2 20,2H4A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H18L22,22V4Z" />
@@ -646,7 +647,7 @@
   					<p class="card__text-small">1 files</p>
   				</div>
   			</div>
-
+  		
   			<div class="card">
   				<div class="card__mark  card__mark--green"></div>
   				<div class="card__mark  card__mark--blue"></div>
@@ -658,7 +659,7 @@
   					<img src="img/user_04.png" alt="user" class="gallery__img">
   					<img src="img/user_02.png" alt="user" class="gallery__img">
   				</div>
-
+  		
   				<form class="card__form">
   					<input type="checkbox" id="update2" name="card__checkbox" value="update" class="card__checkbox">
   					<span class="card__checkbox-custom"></span>
@@ -667,7 +668,7 @@
   					<span class="card__checkbox-custom"></span>
   					<label for="setting2" class="card__text  card__text--check">The setting icon should be...</label>
   				</form>
-
+  		
   				<div class="card-footer">
   					<svg viewBox="0 0 24 24" class="card-footer__comment">
   						<path d="M22,4C22,2.89 21.1,2 20,2H4A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H18L22,22V4Z" />
@@ -675,7 +676,7 @@
   					<p class="card__text-small">7</p>
   				</div>
   			</div>
-  		</section>
+  		</section> -->
 
   	</div>
 	

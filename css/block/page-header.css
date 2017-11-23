@@ -15,15 +15,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 67px;
+  height: 50px;
   padding: 0 24px; }
   .header-toggle__text {
     font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     color: #fefefe;
-    margin: 0; }
+    margin: 0;
+    font-size: 0; }
     .header-toggle__text--to {
       font-size: 0; }
     .header-toggle__text--do {
+      font-size: 16px;
       margin-left: 20px; }
   .header-toggle__img {
     width: 24px;
@@ -71,28 +74,35 @@
 
 @media screen and (min-width: 1024px) {
   .page-header {
-    background: #fff; }
+    background: #fff;
+    justify-content: space-between; }
 
   .header-toggle {
     justify-content: center;
+    height: 67px;
     width: 76px;
     background: #373c47;
     border-bottom: 1px solid #292d38;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 0 4px rgba(0, 0, 0, 0.12);
     padding: 0;
-    padding-left: 15px; }
-    .header-toggle__text {
+    padding-left: 15px;
+    font-size: 16px; }
+    .header-toggle__text--do {
+      font-size: 0; }
+    .header-toggle__text--to {
       font-size: 0; }
     .header-toggle--big {
-      width: 255px; }
+      width: 255px;
+      justify-content: space-between; }
   .header-content {
+    flex-grow: 1;
     position: relative;
-    padding-right: 70px;
+    padding-right: 50px;
     border-bottom: 1px solid #d9dce3; }
   .header__magnify {
     position: absolute;
     top: 22px;
-    left: 280px;
+    right: 200px;
     width: 24px;
     height: 24px; }
     .header__magnify--hidden {

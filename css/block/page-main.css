@@ -11,9 +11,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 65px;
+  height: 60px;
   padding: 0 20px;
-  margin-bottom: 10px; }
+  margin-top: 5px;
+  margin-bottom: 5px; }
   .column-header__title {
     flex-grow: 1;
     font-family: 'Roboto', sans-serif;
@@ -38,14 +39,15 @@
   .main-content {
     flex-direction: row;
     height: calc(100vh - 67px);
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y: hidden; }
 
   .column {
     width: 262px;
-    margin: 30px 0 0 30px; }
+    padding-top: 30px;
+    margin: 0 30px 0 0; }
     .column-header {
-      height: 70px;
+      height: 50px;
       background: #208abe; }
       .column-header__title {
         font-family: 'Rubik', sans-serif;
@@ -55,12 +57,21 @@
       .column-header__img {
         fill: #fff; }
     .column:first-child {
-      margin-left: 90px; } }
+      margin-left: 90px; }
+    .column:hover {
+      width: 279px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      margin: 0 13px 0 0; }
+      .column:hover:first-child {
+        margin-left: 90px; } }
 @media screen and (min-width: 1440px) {
   .main-content {
     width: calc(100% - 255px); }
 
   .column:first-child {
+    margin-left: 30px; }
+  .column:hover:first-child {
     margin-left: 30px; } }
 
 /*# sourceMappingURL=page-main.css.map */

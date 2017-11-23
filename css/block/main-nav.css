@@ -19,6 +19,7 @@
       border-bottom: 2px solid #df5b5b; }
   .menu__link {
     font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     font-size: 14px;
     line-height: 48px;
     text-transform: uppercase;

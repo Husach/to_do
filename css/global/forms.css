@@ -2,6 +2,7 @@
   position: relative; }
   .form__search {
     width: 100%;
+    font-size: 14px;
     height: 45px;
     padding-left: 23px; }
     .form__search--header {
@@ -38,8 +39,7 @@
 
 @media screen and (min-width: 1024px) {
   .form--header {
-    padding-right: 30px; }
-
+    padding-right: 5px; }
   .form__search {
     width: 262px;
     height: 45px;
@@ -51,7 +51,6 @@
       display: block; }
       .form__search--header:focus {
         border: 1px solid #74a6fa; }
-
   .form__search--header {
     width: 318px;
     height: 40px; } }
