@@ -14,7 +14,7 @@
     list-style: none;
     border-bottom: 2px solid #2d323e;
     margin-right: 10px;
-    min-width: 75px; }
+    min-width: 85px; }
     .menu__item:hover {
       border-bottom: 2px solid #df5b5b; }
   .menu__link {
@@ -22,6 +22,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 48px;
+    height: 48px;
     text-transform: uppercase;
     text-decoration: none;
     color: #bdbec2; }
