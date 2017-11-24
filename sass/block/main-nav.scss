@@ -62,17 +62,7 @@
   .menu {
     flex-direction: column;
     padding: 0;
-
-    &__link {
-      display: flex;
-      align-items: center;
-      text-transform: none;
-      font-size: 0;
-
-      &--open {
-        font-size: 14px; 
-      }
-    }
+    overflow-y: hidden;
 
     &__item {
       border-bottom: 0;
@@ -81,6 +71,18 @@
         background: #292d38;
         border-bottom: 0;
       }
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      text-transform: none;
+      padding-left: 3px;
+      /* font-size: 0;
+
+      &--open {
+        font-size: 14px; 
+      } */
     }
 
     &__img {
