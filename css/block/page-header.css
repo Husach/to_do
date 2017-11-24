@@ -33,8 +33,7 @@
     height: 24px;
     fill: #fefefe; }
     .header-toggle__img--hidden {
-      width: 0;
-      height: 0; }
+      display: none; }
 .header-content {
   display: -webkit-flex;
   display: -moz-flex;
@@ -46,12 +45,6 @@
 .header__bell {
   position: relative;
   margin-left: 20px; }
-  .header__bell-img {
-    position: relative;
-    width: 24px;
-    height: 24px;
-    fill: #5e6a80;
-    margin-right: 20px; }
   .header__bell:after {
     content: '2';
     position: absolute;
@@ -64,6 +57,12 @@
     font-size: 10px;
     color: #fff;
     padding: 1px 0 0 4px; }
+  .header__bell-img {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    fill: #5e6a80;
+    margin-right: 20px; }
 .header__magnify {
   width: 24px;
   height: 24px;
@@ -78,19 +77,20 @@
     justify-content: space-between; }
 
   .header-toggle {
-    justify-content: center;
+    justify-content: space-between;
     height: 67px;
     width: 76px;
+    font-size: 16px;
     background: #373c47;
     border-bottom: 1px solid #292d38;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 0 4px rgba(0, 0, 0, 0.12);
-    padding: 0;
-    padding-left: 15px;
-    font-size: 16px; }
+    padding: 0 20px; }
     .header-toggle__text--do {
-      font-size: 0; }
+      display: none; }
     .header-toggle__text--to {
-      font-size: 0; }
+      font-size: 16px; }
+      .header-toggle__text--to.hidden {
+        font-size: 0; }
     .header-toggle--big {
       width: 255px;
       justify-content: space-between; }
@@ -123,19 +123,19 @@
       fill: #5e6a80; } }
 @media screen and (min-width: 1440px) {
   .header-toggle {
-    width: 255px;
-    justify-content: space-between;
-    padding: 0 20px; }
+    width: 255px; }
     .header-toggle__text {
       font-size: 16px; }
       .header-toggle__text--do {
         display: none; }
       .header-toggle__text--to {
+        font-size: 16px;
         padding-left: 0; }
-    .header-toggle__img--backburger {
-      height: 24px;
-      width: 24px; }
-    .header-toggle__img--burger {
-      display: none; } }
+        .header-toggle__text--to.hidden {
+          font-size: 16px; }
+    .header-toggle__img {
+      display: none; }
+      .header-toggle__img--hidden {
+        display: block; } }
 
 /*# sourceMappingURL=page-header.css.map */

@@ -9,7 +9,6 @@
 }
 
 .header {
-
   &-toggle {
   display: -webkit-flex;
   display: -moz-flex;
@@ -31,7 +30,6 @@
       &--to {
         font-size: 0;
       }
-
       &--do {
         font-size: 16px;
         margin-left: 20px;
@@ -44,8 +42,7 @@
       fill: #fefefe;
 
       &--hidden {
-        width: 0;
-        height: 0;
+        display: none;
       }
     }
   }
@@ -63,15 +60,7 @@
   &__bell {
     position: relative;
     margin-left: 20px;
-
-    &-img {
-      position: relative;
-      width: 24px;
-      height: 24px;
-      fill: #5e6a80;
-      margin-right: 20px;
-    }
-
+    
     &:after {
       content: '2';
       position: absolute;
@@ -85,6 +74,15 @@
       color: #fff;
       padding: 1px 0 0 4px;
     }
+
+    &-img {
+      position: relative;
+      width: 24px;
+      height: 24px;
+      fill: #5e6a80;
+      margin-right: 20px;
+    }
+
   }
 
   &__magnify {
@@ -105,26 +103,28 @@
   }
 
   .header {
-
     &-toggle {
-      justify-content: center;
+      justify-content: space-between;
       height: 67px;
       width: 76px;
+      font-size: 16px;
       background: #373c47;
       border-bottom: 1px solid #292d38;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 
               0 0 4px rgba(0, 0, 0, 0.12);
-      padding: 0;
-      padding-left: 15px;
-      font-size: 16px;
+      padding: 0 20px;
 
       &__text {
         &--do {
-          font-size: 0;  
+          display: none;
         }
         &--to {
-          font-size: 0;
-        }        
+          font-size: 16px;  
+          
+          &.hidden {
+            font-size: 0;
+          }
+        }
       }
 
       &--big {
@@ -179,8 +179,6 @@
   .header {
     &-toggle {
       width: 255px;
-      justify-content: space-between;
-      padding: 0 20px;
 
       &__text {
         font-size: 16px;
@@ -189,20 +187,27 @@
           display: none;
         }
         &--to {
+          font-size: 16px;
           padding-left: 0;
+
+          &.hidden {
+            font-size: 16px;
+          }
         }
       }
 
       &__img {
-        &--backburger {
-          height: 24px;
-          width: 24px;
+        display: none;
+
+        &--hidden {
+          display: block;
         }
 
-        &--burger {
-          display: none;
-        }
       }
+
+
+
+
     }  
   }  
 }
