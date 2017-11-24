@@ -539,14 +539,15 @@ template {
   display: flex;
   margin: 0;
   padding-left: 60px;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  flex-wrap: wrap; }
   .menu__item {
     display: flex;
     align-items: center;
     list-style: none;
     border-bottom: 2px solid #2d323e;
     margin-right: 10px;
-    min-width: 85px; }
+    min-width: 75px; }
     .menu__item:hover {
       border-bottom: 2px solid #df5b5b; }
   .menu__link {
@@ -608,7 +609,8 @@ template {
   display: -o-flex;
   display: flex;
   justify-content: space-between;
-  background: #2d323e; }
+  background: #2d323e;
+  padding: 0 10px; }
 
 .header-toggle {
   display: -webkit-flex;
@@ -668,17 +670,20 @@ template {
     fill: #5e6a80;
     margin-right: 20px; }
 .header__magnify {
+  position: relative;
   width: 24px;
   height: 24px;
-  fill: #5e6a80; }
+  fill: #5e6a80;
+  z-index: 10; }
 
 .user {
   display: none; }
 
 @media screen and (min-width: 1024px) {
   .page-header {
+    justify-content: space-between;
     background: #fff;
-    justify-content: space-between; }
+    padding: 0; }
 
   .header-toggle {
     justify-content: space-between;
@@ -750,7 +755,8 @@ template {
 
 .main-content {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 0 10px; }
 
 .column-header {
   display: flex;
@@ -787,7 +793,8 @@ template {
     height: calc(100vh - 67px);
     overflow: hidden;
     overflow-x: auto;
-    white-space: nowrap; }
+    white-space: nowrap;
+    padding: 0; }
 
   .column-wrap {
     display: inline-block;
@@ -823,6 +830,7 @@ template {
 .form {
   position: relative; }
   .form__search {
+    position: relative;
     width: 100%;
     font-size: 14px;
     height: 45px;
@@ -832,6 +840,12 @@ template {
     .form__search:focus {
       border: 1px solid #a0c7fd;
       box-shadow: 0 1px 3px rgba(116, 179, 250, 0.3); }
+  .form--visible {
+    width: 80px;
+    top: -1px;
+    left: 30px;
+    height: 30px;
+    background: #e2e2e2; }
   .form__ok {
     position: absolute;
     top: 12px;
@@ -863,9 +877,12 @@ template {
   .form--header {
     padding-right: 5px; }
   .form__search {
+    position: relative;
+    left: 0;
     width: 262px;
     height: 45px;
-    padding-left: 15px; }
+    padding-left: 15px;
+    background: #fff; }
     .form__search:focus {
       border: 1px solid #a0c7fd;
       box-shadow: 0 1px 3px rgba(116, 179, 250, 0.3); }

@@ -21,6 +21,10 @@ window.onload = function () {
     btnClosed.addEventListener("click", menuTablet, false);
   }
 
+  if (window.innerWidth < 1024) {
+    Magnify.addEventListener("click", mobileSearch, false);
+  }
+
   mainSearch.addEventListener("focus", search, false);
   mainSearch.addEventListener("blur", search, false);
 
@@ -45,5 +49,11 @@ window.onload = function () {
   function columnSearch() {
     formOk.classList.toggle("form__ok--hidden");
     formClosed.classList.toggle("form__closed--hidden");
-  }
+  } 
+
+  function mobileSearch() {
+    mainSearch.classList.toggle("form__search--header");
+    mainSearch.classList.toggle("form--visible");
+  } 
 }
+
