@@ -38,6 +38,7 @@
       fill: #424a59;
 
       &:hover {
+        cursor: pointer;
         opacity: 0.5;
       }
     }  
@@ -51,11 +52,25 @@
   }
 
   .main-content {
-    flex-direction: row;
+    display: inline-block;
     height: calc(100vh - 67px);
+    overflow: hidden;
     overflow-x: auto;
-    overflow-y: hidden;
+    white-space: nowrap;
   }  
+
+  .column-wrap {
+    display: inline-block;
+    height: calc(100vh - 67px);
+    width: 279px;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-right: 13px;
+  }
+
+  .column-wrap:first-child {
+    margin-left: 90px;
+  }
 
   .column {
     width: 262px;
@@ -77,21 +92,6 @@
         fill: #fff;
       }
     }
-
-    &:first-child {
-      margin-left: 90px;
-    }
-
-    &:hover {
-      width: 279px;
-      overflow-y: scroll;
-      overflow-x: hidden;      
-      margin: 0 13px 0 0;
-
-      &:first-child {
-        margin-left: 90px;
-      }
-    } 
   }
 }
 
@@ -100,15 +100,9 @@
     width: calc(100% - 255px);
   }
 
-  .column {
+  .column-wrap {
     &:first-child {
       margin-left: 30px;
-    }
-
-    &:hover {
-      &:first-child {
-        margin-left: 30px;
-      }
     }
   }
 }

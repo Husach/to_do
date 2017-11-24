@@ -40,6 +40,7 @@
       width: 24px;
       height: 24px;
       fill: #fefefe;
+      cursor: pointer;
 
       &--hidden {
         display: none;
@@ -161,6 +162,7 @@
 
   .user {
     display: block;
+    cursor: pointer;
     outline: none;
 
     &::-webkit-details-marker {
@@ -198,16 +200,12 @@
 
       &__img {
         display: none;
+        cursor: default;
 
         &--hidden {
           display: block;
         }
-
       }
-
-
-
-
     }  
   }  
 }

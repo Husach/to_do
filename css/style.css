@@ -634,7 +634,8 @@ template {
   .header-toggle__img {
     width: 24px;
     height: 24px;
-    fill: #fefefe; }
+    fill: #fefefe;
+    cursor: pointer; }
     .header-toggle__img--hidden {
       display: none; }
 .header-content {
@@ -717,6 +718,7 @@ template {
 
   .user {
     display: block;
+    cursor: pointer;
     outline: none; }
     .user::-webkit-details-marker {
       display: none; }
@@ -737,7 +739,8 @@ template {
         .header-toggle__text--to.hidden {
           font-size: 16px; }
     .header-toggle__img {
-      display: none; }
+      display: none;
+      cursor: default; }
       .header-toggle__img--hidden {
         display: block; } }
 .page-main {
@@ -771,6 +774,7 @@ template {
     height: 24px;
     fill: #424a59; }
     .column-header__img:hover {
+      cursor: pointer;
       opacity: 0.5; }
 
 @media screen and (min-width: 1024px) {
@@ -779,10 +783,22 @@ template {
     flex-direction: row; }
 
   .main-content {
-    flex-direction: row;
+    display: inline-block;
     height: calc(100vh - 67px);
+    overflow: hidden;
     overflow-x: auto;
-    overflow-y: hidden; }
+    white-space: nowrap; }
+
+  .column-wrap {
+    display: inline-block;
+    height: calc(100vh - 67px);
+    width: 279px;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-right: 13px; }
+
+  .column-wrap:first-child {
+    margin-left: 90px; }
 
   .column {
     width: 262px;
@@ -797,23 +813,12 @@ template {
         font-weight: 500;
         color: #fff; }
       .column-header__img {
-        fill: #fff; }
-    .column:first-child {
-      margin-left: 90px; }
-    .column:hover {
-      width: 279px;
-      overflow-y: scroll;
-      overflow-x: hidden;
-      margin: 0 13px 0 0; }
-      .column:hover:first-child {
-        margin-left: 90px; } }
+        fill: #fff; } }
 @media screen and (min-width: 1440px) {
   .main-content {
     width: calc(100% - 255px); }
 
-  .column:first-child {
-    margin-left: 30px; }
-  .column:hover:first-child {
+  .column-wrap:first-child {
     margin-left: 30px; } }
 .form {
   position: relative; }

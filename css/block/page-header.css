@@ -31,7 +31,8 @@
   .header-toggle__img {
     width: 24px;
     height: 24px;
-    fill: #fefefe; }
+    fill: #fefefe;
+    cursor: pointer; }
     .header-toggle__img--hidden {
       display: none; }
 .header-content {
@@ -114,6 +115,7 @@
 
   .user {
     display: block;
+    cursor: pointer;
     outline: none; }
     .user::-webkit-details-marker {
       display: none; }
@@ -134,7 +136,8 @@
         .header-toggle__text--to.hidden {
           font-size: 16px; }
     .header-toggle__img {
-      display: none; }
+      display: none;
+      cursor: default; }
       .header-toggle__img--hidden {
         display: block; } }
 
